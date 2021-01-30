@@ -254,3 +254,6 @@ p {
 .font-weight-light {
   font-weight: 100 !important;
 }
+.carousel, .carousel-inner > .item > img {
+  height: 50px;
+}
