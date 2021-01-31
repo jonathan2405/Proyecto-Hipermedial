@@ -68,137 +68,54 @@
         <div class="col-xl-9 col-lg-10 mx-auto">
           <div class="bg-faded rounded p-5">
             <div class="container mt-3">
-              <h2>Filtrar</h2>
-              <p>Ingrese el lugar el servicio que necesita o los años de experiencia por lo que desea buscar </p>  
-              <input class="form-control" id="myInput" type="text" placeholder="Search..">
+              <h2>Usuario</h2> 
               <br>
               <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>Nombre</th>
                     <th>Correo</th>
+                    <th>Foto</th>
                     <th>Direccion</th>
                     <th>Años de experiencia</th>
                     <th>Formacion</th>
                     <th>Trabajos realizados</th>
                     <th>Redes Sociales</th>
+                    <th>Calificar</th>
                   </tr>
                 </thead>
-                <tbody id="myTable">
+                <tbody id="usuario">
                   <tr>
                     <td>Andres Parra</td>
                     <td>aparra@est.ups.edu.ec</td>
+                    <td>foto</td>
                     <td>Quitumbe</td>
                     <td>2</td>
                     <td>electricista</td>
-                    <td>foto</td>
+                    <td>Trabajo</td>
                     <td>Andres Parra</td>
-                    <td><a href="usuarios.php">Ver mas informacion</a></td>
+                    <td><select name="calificacion">
+
+                      <option>1 estrella</option>
+                      
+                      <option>2 estrellas</option>
+                      
+                      <option>3 estrellas</option>
+                      
+                      </select></td>
+                  
                   </tr>
-                  <tr>
-                    <td>Andres Parra</td>
-                    <td>aparra@est.ups.edu.ec</td>
-                    <td>Quitumbe</td>
-                    <td>2</td>
-                    <td>electricista</td>
-                    <td>foto</td>
-                    <td>Andres Parra</td>
-                    <td><a href="usuarios.php">Ver mas informacion</a></td>
-                  </tr>
-                  <tr>
-                    <td>Andres Parra</td>
-                    <td>aparra@est.ups.edu.ec</td>
-                    <td>Quitumbe</td>
-                    <td>2</td>
-                    <td>electricista</td>
-                    <td>foto</td>
-                    <td>Andres Parra</td>
-                    <td><a href="usuarios.php">Ver mas informacion</a></td>
-                  </tr>
-                  <tr>
-                    <td>Andres Parra</td>
-                    <td>aparra@est.ups.edu.ec</td>
-                    <td>Quitumbe</td>
-                    <td>2</td>
-                    <td>electricista</td>
-                    <td>foto</td>
-                    <td>Andres Parra</td>
-                    <td><a href="">Ver mas informacion</a></td>
-                  </tr>
+                  
                 </tbody>
               </table>
             </div>
+            <div >
+              <a href="servicios.html" class="btn btn-success">Guardar</a>
+            </div>
             
-            <script>
-            $(document).ready(function(){
-              $("#myInput").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function() {
-                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-              });
-            });
-            </script>
+           
 
-<div class="container mt-3">
-  <h2>10 Mejores Usuarios</h2>
-  <br>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Correo</th>
-        <th>Direccion</th>
-        <th>Años de experiencia</th>
-        <th>Formacion</th>
-        <th>Trabajos realizados</th>
-        <th>Redes Sociales</th>
-      </tr>
-    </thead>
-    <tbody id="myTable">
-      <tr>
-        <td>Andres Parra</td>
-        <td>aparra@est.ups.edu.ec</td>
-        <td>Quitumbe</td>
-        <td>2</td>
-        <td>electricista</td>
-        <td>foto</td>
-        <td>Andres Parra</td>
-        <td><a href="">Ver mas informacion</a></td>
-      </tr>
-      <tr>
-        <td>Andres Parra</td>
-        <td>aparra@est.ups.edu.ec</td>
-        <td>Quitumbe</td>
-        <td>2</td>
-        <td>electricista</td>
-        <td>foto</td>
-        <td>Andres Parra</td>
-        <td><a href="">Ver mas informacion</a></td>
-      </tr>
-      <tr>
-        <td>Andres Parra</td>
-        <td>aparra@est.ups.edu.ec</td>
-        <td>Quitumbe</td>
-        <td>2</td>
-        <td>electricista</td>
-        <td>foto</td>
-        <td>Andres Parra</td>
-        <td><a href="">Ver mas informacion</a></td>
-      </tr>
-      <tr>
-        <td>Andres Parra</td>
-        <td>aparra@est.ups.edu.ec</td>
-        <td>Quitumbe</td>
-        <td>2</td>
-        <td>electricista</td>
-        <td>foto</td>
-        <td>Andres Parra</td>
-        <td><a href="">Ver mas informacion</a></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
           </div>
         </div>
       </div>
