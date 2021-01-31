@@ -18,7 +18,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 
+<script type="text/javascript" src="js/script.js"></script>
   
   <link href="css/business-casual.min.css" rel="stylesheet">
 
@@ -69,8 +71,13 @@
           <div class="bg-faded rounded p-5">
             <div class="container mt-3">
               <h2>Filtrar</h2>
-              <p>Ingrese el lugar el servicio que necesita o los años de experiencia por lo que desea buscar </p>  
-              <input class="form-control" id="myInput" type="text" placeholder="Search..">
+              <select class="form-control" id="status">
+								<option value="Entregado">Lugar</option>
+								<option value="Enviada">Conocimiento</option>
+								<option value="Pendiente">Experiencia</option>
+								
+							</select>
+              
               <br>
               <table class="table table-bordered">
                 <thead>
